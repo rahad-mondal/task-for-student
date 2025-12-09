@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me - Professional Portfolio</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.4.19/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="flex flex-col min-h-screen">
+    <header
+      class="navbar bg-base-100/80 backdrop-blur-md shadow-sm sticky top-0 z-50"
+    >
+      <div class="navbar-start">
+        <div class="dropdown">
+          <label tabindex="0" class="btn btn-ghost lg:hidden"
+            ><i class="fa-solid fa-bars text-xl"></i
+          ></label>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+          >
+            <li>
+              <a href="index.html"><i class="fa-solid fa-home"></i> Home</a>
+            </li>
+            <li>
+              <a href="about.html" class="active"
+                ><i class="fa-solid fa-user"></i> About</a
+              >
+            </li>
+            <li>
+              <a href="portfolio.html"
+                ><i class="fa-solid fa-briefcase"></i> Portfolio</a
+              >
+            </li>
+            <li>
+              <a href="service.html"
+                ><i class="fa-solid fa-layer-group"></i> Services</a
+              >
+            </li>
+            <li>
+              <a href="contact.html"
+                ><i class="fa-solid fa-envelope"></i> Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+        <a
+          href="index.html"
+          class="btn btn-ghost text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent"
+        >
+          <i class="fa-solid fa-code text-primary"></i> DevPort
+        </a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1 gap-2 font-medium">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li>
+            <a
+              href="about.html"
+              class="nav-link text-primary border-b-2 border-primary"
+              >About</a
+            >
+          </li>
+          <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+          <li><a href="service.html" class="nav-link">Services</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <a href="contact.html" class="btn btn-primary btn-sm rounded-full px-6"
+          >Hire Me</a
+        >
+      </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-16 flex-grow">
+      <div class="text-center mb-16">
+        <h1 class="text-5xl font-bold mb-4">About Me</h1>
+        <p class="text-gray-500 text-lg">My journey, experience, and values.</p>
+        <div class="w-24 h-1 bg-primary mx-auto mt-4 rounded-full"></div>
+      </div>
+
+      <div
+        class="card lg:card-side bg-base-100 shadow-xl border border-base-200 mb-16 overflow-hidden"
+      >
+        <figure class="lg:w-1/3 relative group">
+          <img
+            src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1000&auto=format&fit=crop"
+            alt="Profile"
+            class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+          />
+          <div
+            class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
+          >
+            <span class="text-white font-bold text-xl">Hello!</span>
+          </div>
+        </figure>
+        <div class="card-body lg:w-2/3 p-10">
+          <h2 class="card-title text-3xl mb-4 font-bold text-gray-800">
+            I'm Alex, a Creative Developer
+          </h2>
+          <p class="text-gray-600 leading-relaxed mb-6">
+            I have a passion for building user-friendly and aesthetically
+            pleasing digital experiences. With over 5 years of experience in the
+            tech industry, I specialize in transforming complex problems into
+            simple, elegant solutions. I believe in clean code, continuous
+            learning, and the power of collaboration.
+          </p>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+            <div class="flex items-center gap-3">
+              <i class="fa-solid fa-cake-candles text-primary text-xl"></i>
+              <span><strong>Age:</strong> 28 Years</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <i class="fa-solid fa-flag text-secondary text-xl"></i>
+              <span><strong>Nationality:</strong> Bangladeshi</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <i class="fa-solid fa-briefcase text-accent text-xl"></i>
+              <span><strong>Experience:</strong> 5+ Years</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <i class="fa-solid fa-phone text-green-500 text-xl"></i>
+              <span><strong>Phone:</strong> +880 123 456</span>
+            </div>
+          </div>
+
+          <div class="card-actions justify-start">
+            <button class="btn btn-primary">
+              <i class="fa-solid fa-download"></i> Download CV
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="mb-16">
+        <h2 class="text-3xl font-bold mb-8 text-center">
+          <i class="fa-solid fa-screwdriver-wrench text-primary mr-2"></i>
+          Technical Skills
+        </h2>
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 gap-8 bg-white p-8 rounded-2xl shadow-lg"
+        >
+          <div>
+            <div class="flex justify-between mb-2">
+              <span class="font-semibold flex items-center gap-2"
+                ><i class="fa-brands fa-html5 text-orange-600 text-xl"></i>
+                HTML5 & CSS3</span
+              >
+              <span class="font-bold text-primary">95%</span>
+            </div>
+            <progress
+              class="progress progress-primary w-full h-3"
+              value="95"
+              max="100"
+            ></progress>
+          </div>
+          <div>
+            <div class="flex justify-between mb-2">
+              <span class="font-semibold flex items-center gap-2"
+                ><i class="fa-brands fa-js text-yellow-500 text-xl"></i>
+                JavaScript (ES6+)</span
+              >
+              <span class="font-bold text-secondary">85%</span>
+            </div>
+            <progress
+              class="progress progress-secondary w-full h-3"
+              value="85"
+              max="100"
+            ></progress>
+          </div>
+          <div>
+            <div class="flex justify-between mb-2">
+              <span class="font-semibold flex items-center gap-2"
+                ><i class="fa-brands fa-react text-blue-400 text-xl"></i> React
+                & Tailwind</span
+              >
+              <span class="font-bold text-accent">90%</span>
+            </div>
+            <progress
+              class="progress progress-accent w-full h-3"
+              value="90"
+              max="100"
+            ></progress>
+          </div>
+          <div>
+            <div class="flex justify-between mb-2">
+              <span class="font-semibold flex items-center gap-2"
+                ><i class="fa-brands fa-node text-green-600 text-xl"></i>
+                Backend (Node.js)</span
+              >
+              <span class="font-bold text-info">75%</span>
+            </div>
+            <progress
+              class="progress progress-info w-full h-3"
+              value="75"
+              max="100"
+            ></progress>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center">
+        <h2
+          class="text-2xl font-bold mb-8 text-gray-400 uppercase tracking-widest"
+        >
+          Trusted By
+        </h2>
+        <div
+          class="flex flex-wrap justify-center gap-8 opacity-70 grayscale hover:grayscale-0 transition-all duration-500"
+        >
+          <div class="text-4xl text-gray-600 hover:text-blue-600 transition">
+            <i class="fa-brands fa-google"></i>
+          </div>
+          <div class="text-4xl text-gray-600 hover:text-blue-800 transition">
+            <i class="fa-brands fa-facebook"></i>
+          </div>
+          <div class="text-4xl text-gray-600 hover:text-blue-400 transition">
+            <i class="fa-brands fa-twitter"></i>
+          </div>
+          <div class="text-4xl text-gray-600 hover:text-black transition">
+            <i class="fa-brands fa-amazon"></i>
+          </div>
+          <div class="text-4xl text-gray-600 hover:text-red-600 transition">
+            <i class="fa-brands fa-airbnb"></i>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer
+      class="footer footer-center p-10 bg-gray-900 text-white rounded-t-3xl mt-auto"
+    >
+      <div class="grid grid-flow-col gap-4">
+        <a href="about.html" class="link link-hover">About us</a>
+        <a href="contact.html" class="link link-hover">Contact</a>
+        <a href="portfolio.html" class="link link-hover">Portfolio</a>
+      </div>
+      <div>
+        <div class="grid grid-flow-col gap-6 text-2xl">
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+      <div>
+        <p>
+          Copyright © 2024 - <span class="text-primary font-bold">DevPort</span>
+        </p>
+        <p class="text-xs text-gray-500">
+          <i class="fa-regular fa-clock"></i> <span id="live-time">...</span>
+        </p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

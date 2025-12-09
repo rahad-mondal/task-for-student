@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - My Works</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.4.19/dist/full.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="flex flex-col min-h-screen">
+    <header
+      class="navbar bg-base-100/80 backdrop-blur-md shadow-sm sticky top-0 z-50"
+    >
+      <div class="navbar-start">
+        <div class="dropdown">
+          <label tabindex="0" class="btn btn-ghost lg:hidden"
+            ><i class="fa-solid fa-bars"></i
+          ></label>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+          >
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <a
+          href="index.html"
+          class="btn btn-ghost text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent"
+        >
+          <i class="fa-solid fa-code text-primary"></i> DevPort
+        </a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1 gap-2 font-medium">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li>
+            <a
+              href="portfolio.html"
+              class="nav-link text-primary border-b-2 border-primary"
+              >Portfolio</a
+            >
+          </li>
+          <li><a href="service.html" class="nav-link">Services</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <a href="contact.html" class="btn btn-primary btn-sm rounded-full px-6"
+          >Hire Me</a
+        >
+      </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-16 flex-grow">
+      <div class="text-center mb-16">
+        <h1 class="text-5xl font-bold mb-4">My Portfolio</h1>
+        <p class="text-gray-500">
+          A timeline of my education and professional journey.
+        </p>
+        <div
+          class="divider w-32 mx-auto after:bg-primary before:bg-primary"
+        ></div>
+      </div>
+
+      <div class="mb-16">
+        <h2 class="text-2xl font-bold mb-6 flex items-center gap-3">
+          <i class="fa-solid fa-graduation-cap text-primary"></i> Education
+          History
+        </h2>
+        <div
+          class="overflow-x-auto rounded-xl shadow-lg border border-base-200"
+        >
+          <table class="table w-full bg-white">
+            <thead class="bg-gray-100 text-gray-700 uppercase">
+              <tr>
+                <th class="py-4">Degree / Certification</th>
+                <th>Institute</th>
+                <th>Passing Year</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody class="text-gray-600">
+              <tr class="hover:bg-gray-50 transition">
+                <td class="font-bold">
+                  <i class="fa-solid fa-medal text-yellow-500 mr-2"></i> B.Sc in
+                  CSE
+                </td>
+                <td>University of Engineering</td>
+                <td>2022</td>
+                <td>
+                  <div class="badge badge-success gap-2 text-white">
+                    Completed
+                  </div>
+                </td>
+              </tr>
+              <tr class="hover:bg-gray-50 transition">
+                <td class="font-bold">
+                  <i class="fa-solid fa-book text-blue-500 mr-2"></i> Higher
+                  Secondary
+                </td>
+                <td>Dhaka City College</td>
+                <td>2018</td>
+                <td>
+                  <div class="badge badge-success gap-2 text-white">
+                    Completed
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div
+        class="mb-16 bg-gradient-to-r from-primary to-secondary p-10 rounded-2xl text-white text-center shadow-xl"
+      >
+        <h2 class="text-3xl font-bold mb-4">Professional Certifications</h2>
+        <p class="mb-6 opacity-90">
+          I have completed several industry-standard certifications to keep my
+          skills sharp.
+        </p>
+        <button
+          class="btn btn-white text-primary border-none hover:bg-gray-100"
+          onclick="cert_modal.showModal()"
+        >
+          <i class="fa-solid fa-certificate"></i> View Details
+        </button>
+
+        <dialog id="cert_modal" class="modal text-gray-800">
+          <div class="modal-box">
+            <h3 class="font-bold text-lg flex items-center gap-2">
+              <i class="fa-solid fa-award text-yellow-500"></i> Full Stack
+              Development
+            </h3>
+            <p class="py-4">
+              Successfully completed 300+ hours of intense training covering
+              HTML, CSS, JS, React, and Node.js from
+              <strong>Programming Hero</strong>.
+            </p>
+            <div class="modal-action">
+              <form method="dialog">
+                <button
+                  class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
+                >
+                  ✕
+                </button>
+                <button class="btn btn-primary">Close</button>
+              </form>
+            </div>
+          </div>
+          <form method="dialog" class="modal-backdrop">
+            <button>close</button>
+          </form>
+        </dialog>
+      </div>
+
+      <div>
+        <h2 class="text-2xl font-bold mb-8 flex items-center gap-3">
+          <i class="fa-solid fa-briefcase text-secondary"></i> Work Experience
+        </h2>
+        <ul
+          class="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical"
+        >
+          <li>
+            <div class="timeline-middle">
+              <i class="fa-solid fa-circle-check text-primary text-xl"></i>
+            </div>
+            <div class="timeline-start md:text-end mb-10 px-4">
+              <time class="font-mono italic text-gray-400">2023 - Present</time>
+              <div class="text-lg font-black text-gray-800">
+                Senior Developer
+              </div>
+              <p class="text-gray-600">
+                Leading the frontend team at <strong>TechSolutions</strong>.
+                Responsible for architecture and code reviews.
+              </p>
+            </div>
+            <hr class="bg-primary" />
+          </li>
+          <li>
+            <hr class="bg-primary" />
+            <div class="timeline-middle">
+              <i class="fa-solid fa-circle-check text-secondary text-xl"></i>
+            </div>
+            <div class="timeline-end mb-10 px-4">
+              <time class="font-mono italic text-gray-400">2021 - 2023</time>
+              <div class="text-lg font-black text-gray-800">
+                Junior Web Developer
+              </div>
+              <p class="text-gray-600">
+                Worked at <strong>Creative Agency</strong> building responsive
+                websites for local businesses.
+              </p>
+            </div>
+            <hr />
+          </li>
+        </ul>
+      </div>
+    </main>
+
+    <footer
+      class="footer footer-center p-10 bg-gray-900 text-white rounded-t-3xl mt-auto"
+    >
+      <div class="grid grid-flow-col gap-4">
+        <a href="about.html" class="link link-hover">About us</a>
+        <a href="contact.html" class="link link-hover">Contact</a>
+        <a href="portfolio.html" class="link link-hover">Portfolio</a>
+      </div>
+      <div>
+        <div class="grid grid-flow-col gap-6 text-2xl">
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+      <div>
+        <p>
+          Copyright © 2024 - <span class="text-primary font-bold">DevPort</span>
+        </p>
+        <p class="text-xs text-gray-500">
+          <i class="fa-regular fa-clock"></i>
+          <span id="live-time">Loading...</span>
+        </p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

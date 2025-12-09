@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+/* গ্লোবাল ফন্ট সেটআপ */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f8fafc; /* খুব হালকা ব্যাকগ্রাউন্ড */
+}
+
+/* স্মুথ স্ক্রলিং */
+html {
+  scroll-behavior: smooth;
+}
+
+/* কাস্টম স্ক্রলবার */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #4f46e5, #06b6d4);
+  border-radius: 10px;
+}
+
+/* ন্যাপবার লিংক হোভার ইফেক্ট */
+.nav-link {
+  position: relative;
+  transition: all 0.3s ease;
+}
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #4f46e5;
+  transition: width 0.3s;
+}
+.nav-link:hover::after {
+  width: 100%;
+}
